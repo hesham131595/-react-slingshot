@@ -6,7 +6,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: npm i
+      - run: npm install
       - run: 
           name: first
           command: npm run lint
@@ -16,7 +16,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: npm i
+      - run: npm install
       - run: 
           name: first
           command: npm run test
@@ -25,7 +25,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
-      - run: npm i
+      - run: npm install
       - run: 
           name: first
           command: npm audit
